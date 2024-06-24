@@ -17,6 +17,11 @@ Repositório para aprendizagem e exercícios.
 
 ## [Orientação a objeto Kotlin](https://github.com/Lucas-Israel/android-kotlin/tree/main/orientacao_a_objetos_kotlin)
 - [x] [Classe](https://github.com/Lucas-Israel/android-kotlin/blob/main/orientacao_a_objetos_kotlin/src/main/kotlin/com/betrybe/classes/Classes.kt)
+- [x] [Data Class](https://github.com/Lucas-Israel/android-kotlin/blob/main/orientacao_a_objetos_kotlin/src/main/kotlin/com/betrybe/dataclass/Dataclass.kt)
+- [x] [Delegação](https://github.com/Lucas-Israel/android-kotlin/blob/main/orientacao_a_objetos_kotlin/src/main/kotlin/com/betrybe/delegacoes_e_herancas/delegacao.kt)
+- [x] [Herança](https://github.com/Lucas-Israel/android-kotlin/blob/main/orientacao_a_objetos_kotlin/src/main/kotlin/com/betrybe/delegacoes_e_herancas/Heranca.kt)
 - [x] [Interface](https://github.com/Lucas-Israel/android-kotlin/blob/main/orientacao_a_objetos_kotlin/src/main/kotlin/com/betrybe/interfaces/Interface.kt)
 - [x] [Modificadores de acesso](https://github.com/Lucas-Israel/android-kotlin/blob/main/orientacao_a_objetos_kotlin/src/main/kotlin/com/betrybe/modificadores_de_acesso/exemplo.kt)
 - [x] [Propriedades](https://github.com/Lucas-Israel/android-kotlin/blob/main/orientacao_a_objetos_kotlin/src/main/kotlin/com/betrybe/properties/Propriedades.kt)
+- [x] [Tipo Objeto](https://github.com/Lucas-Israel/android-kotlin/blob/main/orientacao_a_objetos_kotlin/src/main/kotlin/com/betrybe/tipo_object/Object.kt)
+- [x] [Tipo Enumeraveis](https://github.com/Lucas-Israel/android-kotlin/blob/main/orientacao_a_objetos_kotlin/src/main/kotlin/com/betrybe/tipos_enumeraveis/Enumeraveis.kt)
