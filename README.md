@@ -14,3 +14,9 @@ Repositório para aprendizagem e exercícios.
 - [x] [Conjuntos](https://github.com/Lucas-Israel/android-kotlin/blob/main/first_timing_kotlin/src/main/kotlin/com/betrybe/aula02e03/Conjuntos.kt)
 - [x] [HOFS](https://github.com/Lucas-Israel/android-kotlin/blob/main/first_timing_kotlin/src/main/kotlin/com/betrybe/aula02e03/HOFS.kt)
 - [x] [Mapas](https://github.com/Lucas-Israel/android-kotlin/blob/main/first_timing_kotlin/src/main/kotlin/com/betrybe/aula02e03/Mapas.kt)
+
+## [Orientação a objeto Kotlin](https://github.com/Lucas-Israel/android-kotlin/tree/main/orientacao_a_objetos_kotlin)
+- [x] [Classe](https://github.com/Lucas-Israel/android-kotlin/blob/main/orientacao_a_objetos_kotlin/src/main/kotlin/com/betrybe/classes/Classes.kt)
+- [x] [Interface](https://github.com/Lucas-Israel/android-kotlin/blob/main/orientacao_a_objetos_kotlin/src/main/kotlin/com/betrybe/interfaces/Interface.kt)
+- [x] [Modificadores de acesso](https://github.com/Lucas-Israel/android-kotlin/blob/main/orientacao_a_objetos_kotlin/src/main/kotlin/com/betrybe/modificadores_de_acesso/exemplo.kt)
+- [x] [Propriedades](https://github.com/Lucas-Israel/android-kotlin/blob/main/orientacao_a_objetos_kotlin/src/main/kotlin/com/betrybe/properties/Propriedades.kt)
