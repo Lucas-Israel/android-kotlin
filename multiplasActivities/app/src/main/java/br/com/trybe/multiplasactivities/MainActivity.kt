@@ -1,6 +1,7 @@
 package br.com.trybe.multiplasactivities
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -25,8 +26,9 @@ val movieList = listOf(
     Movie("Nomadland", "Chloe Zhao"),
 )
 
+// IClickEventListener esta aqui para adicionar um click nos movies
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), IClickEventListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -51,10 +53,18 @@ class MainActivity : AppCompatActivity() {
         // e também por definir o critério de quando os itens devem ser reciclados.
         recyclerView.layoutManager = LinearLayoutManager(this) // LinearLayoutManager, para listas verticais simples.
 
-        //criando o Adapter a partir da lista de filmes
-        val adapter = MovieAdapter(movieList)
+        // Criando o Adapter a partir da lista de filmes
+        // Como a Activity implementa o IClickEventListener, ela pode ser passada como
+        // parâmetro utilizando a palavra this. Isso é possivel por causa do Polimorfismo.
+        val adapter = MovieAdapter(movieList, this)
 
         //vinculando o adapter ao RecyclerView
         recyclerView.adapter = adapter
+    }
+
+    // esta aqui para adicionar click aos movies
+    override fun onItemClick(position: Int) {
+        val movie = movieList[position]
+        Toast.makeText(this, movie.title, Toast.LENGTH_SHORT).show()
     }
 }

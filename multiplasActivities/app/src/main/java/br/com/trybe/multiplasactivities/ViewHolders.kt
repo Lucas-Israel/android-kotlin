@@ -15,9 +15,29 @@ import androidx.recyclerview.widget.RecyclerView
 // Depois disso, criar o layout do viewHolder
 // Criar este layout da mesma forma que se cria um xml de layout. -> movie_item.xml
 
-class MovieViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+// Refatorar o codigo para aceitar clickListener
+
+class MovieViewHolder(itemView: View, private val clickListener: IClickEventListener) :
+    RecyclerView.ViewHolder(itemView), View.OnClickListener {
     fun bind(movie: Movie) {
         itemView.findViewById<TextView>(R.id.movieTitle).text = movie.title
         itemView.findViewById<TextView>(R.id.movieDirector).text = movie.director
+    }
+
+    // utilizar esta inicialização para definir um onClickListener em nosso ViewHolder,
+    // para que cada item receba uma forma de interação.
+    init {
+        itemView.setOnClickListener(this)
+    }
+
+    // implementar o onClick
+    override fun onClick(p0: View?) {
+        //verificando qual é a posição do item na lista
+        val position = adapterPosition
+
+        //caso a posição exista, chame o método onItemClick
+        if (position != RecyclerView.NO_POSITION) {
+            clickListener.onItemClick(position)
+        }
     }
 }
