@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/item_comment_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="John Doe"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/item_comment_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="johndoe@acme.com"
+            android:textSize="12sp"
+            android:textColor="#808080"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/item_comment_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Abc def ghi fjk lmn opq"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"/>
+        
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
